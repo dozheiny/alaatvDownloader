@@ -1,14 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from bs4 import BeautifulSoup as bs
+import requests
+    
+url = 'https://alaatv.com/set/963'
+req = requests.get(url).text
 
-driver = webdriver.Chrome()
-driver.get("https://alaatv.com")
+soup = bs(req, 'html.parser')
+#s = soup.find('script', type='application/ld+json')
 
-assert "Python" in driver.title
-elem = driver.find_element_by_name("q")
-elem.clear()
-elem.send_keys("pycon")
-elem.send_keys(Keys.RETURN)
+for link in soup.find_all('script', type='application/ld+json'):
 
-assert "NO results found." not in driver.page_source
-driver.close()
+	print(link)
