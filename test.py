@@ -1,16 +1,18 @@
-from bs4 import BeautifulSoup as bs
+import json
+from bs4 import BeautifulSoup as bs, FeatureNotFound
 import requests
     
 url = 'https://alaatv.com/set/963'
-req = requests.get(url).text
+req = requests.get(url).content
 
-soup = bs(req, 'lxml')
-tags = soup.find_all('script')
-s = soup.find('script', type='application/ld+json')
-
+try :
+	soup = bs(req, 'lxml')
+except FeatureNotFound :
+	soup = bs(req, 'html.parser')
 
 for link in soup.find_all('script', type='application/ld+json'):
-
-	if 'https://' in str(link):
-		print(link)
+	data_dict = json.loads(link.string)
+	items = data_dict.get('itemListElement', [])
+	for item in items:
+		print(item.get('url', ''))
 
