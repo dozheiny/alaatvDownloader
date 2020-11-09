@@ -1,2 +1,2 @@
 # allatvDownloader
-this program will download your allatv playlist you choose . 
+this program will download your alaatv playlist you choose . 
