@@ -14,7 +14,7 @@ alaatv does not allow you to download the playlist you want, you should to open 
 [aria2](http://aria2.github.io/)
 if you are on LINUX or MACOS :
 ```
-sudo dnf install python3 aria2 python3-pip git
+sudo [dnf / yum / apt-get] install python3 aria2 python3-pip git
 ```
 and if you are windows user install files from link that i said
 
