@@ -1,7 +1,3 @@
-os
-request
-bs4
-io
-json
-requests
-argparse
+###### Requirements without Version Specifiers ######
+beautifulsoup4
+
