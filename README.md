@@ -10,7 +10,7 @@
 ## general-info 🐱‍🚀
 alaatv does not allow you to download the playlist you want, you should to open the tab all the time and download your video, this is so hard that's why Erfan and i came and wrote this webscrap for you guys .
 
-## update ! (ver 0.2)
+## update! 🐋 (ver 0.2)
 
 now you can have just download links to import your favorite Downloader
 
