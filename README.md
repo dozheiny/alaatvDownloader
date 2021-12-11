@@ -7,16 +7,17 @@
 * [setup](#setup)
 * [usage](#usage)
 
-## general-info 🐱‍🚀
-alaatv does not allow you to download the playlist you want, you should to open the tab all the time and download your video, this is so hard that's why Erfan and i came and wrote this webscrap for you guys .
+## general-info
+alaatv does not allow you to download the playlist you want, you should to open the tab all the time and download your video, this is so hard that's why Erfan and i came and wrote this webscrap for you guys . 🐱‍🚀
 
-## update! 🐋 (ver 0.2)
+## update
 
-now you can have just download links to import your favorite Downloader
+now you can have just download links to import your favorite Downloader🐋
 
 you can use that with ```-link=True``` argument .
-## Requirements 👾
-install packages from source :
+
+## Requirements
+install packages from source : 👾
 
 [python](https://python.org)
 [aria2](http://aria2.github.io/)
@@ -28,8 +29,8 @@ sudo [dnf / yum / apt-get] install python3 aria2 python3-pip git
 ```
 and if you are windows user install files from link that i said
 
-## Setup 👀
-first of all , check requirements installed 
+## Setup 
+first of all , check requirements installed 👀
 ```
 python3 --version
 ```
@@ -59,7 +60,7 @@ cd alaatvDownloader
 pip install -r requirements.txt
 ```
 
-## Usage 🐱‍👤
+## Usage 
 normal usage :
 ```
 python3 alaatvDownloader.py [link] -q [240, 480, 720] -l [True/False]
@@ -84,7 +85,7 @@ python3 alaatvDownloader.py "https://alaatv.com/set/963"
 python3 alaatvDownloader.py "https://alaatv.com/set/963" -q 480 --link True
 python3 alaatvDownloader.py "https://alaatv.com/set/963" --link True
 ```
-the default quality is 480
+the default quality is 480 🐱‍👤
 
 the default link finder is off, you can use that with ```-l True```
 
